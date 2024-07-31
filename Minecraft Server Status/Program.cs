@@ -13,10 +13,10 @@ namespace Minecraft_Server_Status
             Console.WriteLine("Hello, World!");
 
             List<byte> handshake_packet = new List<byte>();
-            string address = "mc.goodboyboy.top";
+            string address = "mc.goodboyboy.top";   //Change it
             byte[] byte_address = Encoding.UTF8.GetBytes(address);
 
-            ushort port = 25565;
+            ushort port = 25565;    //Change it
             byte[] byte_port;
             //实际抓包发现port使用大端排序
             if (!BitConverter.IsLittleEndian)
@@ -28,7 +28,7 @@ namespace Minecraft_Server_Status
                 byte_port = BitConverter.GetBytes(port).Reverse().ToArray();
             }
 
-            int protocol_version = 766;
+            int protocol_version = 766;     //Change it
             byte[] varint_protocol_version = VarInt.ToVarInt(protocol_version);
 
             int next_state = 1;

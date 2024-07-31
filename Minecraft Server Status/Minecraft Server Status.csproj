@@ -6,6 +6,8 @@
     <RootNamespace>Minecraft_Server_Status</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>$(AssemblyName)</Title>
+	<Authors>GoodBoyboy</Authors>
   </PropertyGroup>
 
 </Project>
